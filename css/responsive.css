@@ -40,8 +40,8 @@
 @media screen and (max-width: 865px) {
   body main #skills #skillstypes .type {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+        -ms-flex: 0 0 43%;
+            flex: 0 0 43%;
   }
   body main #about #aboutcontain {
     -webkit-box-orient: vertical;
@@ -73,6 +73,7 @@
         -ms-flex-align: center;
             align-items: center;
     height: 250px;
+    border-bottom: none;
   }
   body header .darkbg nav a {
     border: 0;
@@ -123,14 +124,17 @@
 }
 
 @media screen and (max-width: 565px) {
+  body header {
+    height: 960px;
+  }
+  body header .darkbg {
+    height: 960px;
+  }
   body header .darkbg #maintext h1 {
     font-size: 2.4em;
   }
   body header .darkbg #maintext h2 {
     font-size: 1.1em;
-  }
-  body header .darkbg #maintext #projb {
-    top: 330px;
   }
   body main #projects #projlist {
     padding: 0;

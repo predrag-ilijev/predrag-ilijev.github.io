@@ -3,6 +3,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -209,14 +210,20 @@ body main #projects #projlist .projsite .overlay {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.671);
   width: 280px;
+  height: 100px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
   color: #ffffff;
   padding: 10px;
   text-align: center;
   border-radius: 5px;
+}
+
+body main #projects #projlist .projsite .overlay p label {
+  color: #0099ff;
+  font-weight: bold;
 }
 
 body main #projects #projlist .projsite h3 {
@@ -251,19 +258,22 @@ body main #skills {
   text-shadow: none;
   -webkit-box-shadow: 0px 0px 10px rgba(2, 2, 5, 0.664);
           box-shadow: 0px 0px 10px rgba(2, 2, 5, 0.664);
-  background-color: #0a0a0a;
+  background-image: url("../img/img12blr.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body main #skills h2 {
   font-size: 26px;
   text-transform: uppercase;
   font-family: 'Josefin Sans';
-  color: #0099ff;
+  color: #ffffff;
 }
 
 body main #skills #skillstypes {
   width: 100%;
-  padding: 0 15%;
+  padding: 0 7%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,29 +287,63 @@ body main #skills #skillstypes {
 
 body main #skills #skillstypes .type {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.3%;
-      flex: 0 0 33.3%;
+  -ms-flex: 0 0 26.3%;
+      flex: 0 0 26.3%;
   margin-top: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-family: 'Josefin Sans';
+  color: #ffffff;
+  /*img {
+                        //width: 60%;
+                        transition: transform .1s;
+                        //max-width: 100%;
+                        //border-radius: 18px;
+                        box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+                    }
+                    img:hover {
+                        transform: scale(1.15);
+                        -webkit-transition:.2s ease-out;
+                        transition:.2s ease-out;
+                    }*/
 }
 
-body main #skills #skillstypes .type h3 {
+body main #skills #skillstypes .type .ovr2 {
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.63);
+  border: 1px solid #383838;
+  border-radius: 8px;
+}
+
+body main #skills #skillstypes .type .ovr2 h3 {
   color: #ffffff;
   margin-top: 10px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body main #skills #skillstypes .type img {
-  -webkit-transition: -webkit-transform .1s;
-  transition: -webkit-transform .1s;
-  transition: transform .1s;
-  transition: transform .1s, -webkit-transform .1s;
+body main #skills #skillstypes .type .ovr2 p {
+  margin-top: 5px;
+  color: #f2ff3e;
 }
 
-body main #skills #skillstypes .type img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
+body main #skills #skillstypes .type .ovr2 .highly {
+  color: #65ff3e;
+}
+
+body main #skills #skillstypes .type .ovr2 .begn {
+  color: #ff8b3e;
+}
+
+body main #skills #skillstypes .type .ovr2 i {
+  padding-top: 30px;
+}
+
+body main #skills #skillstypes .type .ovr2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .4s ease-out;
+  transition: .4s ease-out;
+  background-color: #0099ff;
+  border: 1px solid #0099ff;
 }
 
 body main #about {
@@ -335,6 +379,15 @@ body main #about #aboutcontain p {
   max-width: 100%;
   font-size: 1.4em;
   text-align: justify;
+}
+
+body main #about #aboutcontain p label {
+  color: #0099ff;
+}
+
+body main #about #aboutcontain p label i {
+  margin-top: 5px;
+  color: #1560b6;
 }
 
 body main #about #aboutcontain #image {
@@ -435,11 +488,11 @@ body footer #ftform form input {
   background: 0 0;
   outline: 0;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  border: 1px solid #383838;
 }
 
 body footer #ftform form input #name {
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #383838;
 }
 
 body footer #ftform form .text {
@@ -463,8 +516,8 @@ body footer #ftform form textarea {
   outline: 0;
   background: 0 0;
   color: #ffffff;
-  border: 1px solid #ffffff;
-  font-size: 1.1em;
+  border: 1px solid #383838;
+  font-size: 1.2em;
 }
 
 body footer #ftform form textarea:focus {
@@ -477,7 +530,6 @@ body footer #ftform form textarea:focus {
 body footer #ftform form #submit {
   border-top: none;
   cursor: pointer;
-  background-color: #000000;
 }
 
 body footer #ftform form #submit:hover {

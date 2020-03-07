@@ -54,7 +54,7 @@
             #skills {
                 #skillstypes {
                     .type {
-                        flex: 0 0 50%;
+                        flex: 0 0 43%;
                     }
                 }
             }
@@ -87,6 +87,7 @@
                     flex-direction: column;
                     align-items: center;
                     height: 250px;
+                    border-bottom: none;
                     a {
                         border: 0;
                         font-size: 1.3em;
@@ -114,7 +115,6 @@
                     padding: 0.5%;
                     flex-direction: column;
                     .projsite {
-                        
                         padding: 2%;
                     }
                 }
@@ -136,16 +136,15 @@
 @media screen and (max-width: 565px) {
     body {
         header {
+            height: 960px;
             .darkbg {
+                height: 960px;
                 #maintext {
                     h1 {
                         font-size: 2.4em;
                     }
                     h2 {
                         font-size: 1.1em;
-                    }
-                    #projb {
-                        top: 330px;
                     }
                 }
             }
